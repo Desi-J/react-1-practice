@@ -33,7 +33,7 @@ class App extends Component {
             <button>Edit</button>
           </div>
           {/* Hide Form when this.state.edit is false; Show form if this.state.edit is true */}
-          <form>
+          <form className="show-form">
             <label>Image URL:</label>
             <input />
             <label>Name:</label>
