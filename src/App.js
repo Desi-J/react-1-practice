@@ -7,11 +7,11 @@ class App extends Component {
     super(props);
     this.state = {
       img_url: '', 
-      name: 'John Doe',
-      title: 'Full Stack Web Developer',
-      city: 'Phoenix',
-      location: 'AZ',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum sit amet ex id sollicitudin. Curabitur eu tortor nec tellus feugiat iaculis sed commodo neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Phasellus sit amet justo nunc. Duis non tincidunt leo, eget rhoncus nisi. Integer in justo sit amet est pulvinar vehicula.',
+      name: '',
+      title: '',
+      city: '',
+      location: '',
+      description: '',
       edit: false
      }
     //  Explicitly bind after declaring & defining this.state, but inside the constructor
@@ -35,17 +35,17 @@ class App extends Component {
           {/* Hide Form when this.state.edit is false; Show form if this.state.edit is true */}
           <form className="show-form">
             <label>Image URL:</label>
-            <input />
+            <input value={this.state.img_url} />
             <label>Name:</label>
-            <input />
+            <input value={this.state.name} />
             <label>Title:</label>
-            <input />
+            <input value={this.state.title} />
             <label>City:</label>
-            <input />
+            <input value={this.state.city} />
             <label>State:</label>
-            <input />
+            <input value={this.state.location} />
             <label>Description:</label>
-            <textarea></textarea>
+            <textarea value={this.state.description}></textarea>
           </form>
         </div>
       );
